@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="esp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Antonio Reyes Del Angel</title>
-    <link rel="stylesheet" href="./statics/style.css">
+    <link rel="stylesheet" href="./assets/statics/styles.css">
+    <link rel="stylesheet" href="./assets/statics/layout.css">
+    <script src="https://kit.fontawesome.com/e9f5a9e672.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
+    <!-- MENU -->
+    <div class="menu">
         <div class="container">
-            <div> 
-                <button>icon</button> 
+            <div class="align-right lg-hidden"> 
+                <button onclick="toggleMenu()" class="menu-icon"> <i class="fa-solid fa-bars fa-lg"> </i></button>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li> <a href="">Home</a> </li> 
-                    <li> <a href="">Acerca de mí</a> </li>
-                    <li>  <a href="">Mis habilidades</a> </li>
-                    <li>  <a href="">Experiencia</a> </li>
-                    <li>  <a href="">Portafolio</a> </li>
-                    <li>  <a href="">Contacto</a> </li>
+            <nav id="main-menu" class="hidden">
+                <ul>
+                    <li> <a href="#home">Home</a> </li>              <!-- AGREGAR ID-->
+                    <li> <a href="#about-me">Acerca de mí</a> </li>
+                    <li> <a href="#habilities">Mis habilidades</a> </li>
+                    <li> <a href="#experience">Experiencia</a> </li>
+                    <li> <a href="#portafolio">Portafolio</a> </li>
+                    <li> <a href="#contact">Contacto</a> </li>
                 </ul>
             </nav>
         </div>    
     </div>
-    
+
+    <!-- INTRO -->
     <div class="photo">
 
     </div>
@@ -36,5 +40,31 @@
             desarrollador Web
         </p>
     </div>
+
+    <!-- PORTAFOLIO -->
+    <section>
+        <div class="container">
+            <h4>Portafolio</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/images/gym.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/images/movile.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 special-image">
+                    <div class="card">
+                        <img src="./assets/images/managment.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js.js"></script>
 </body>
 </html>

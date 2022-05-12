@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020403;
+}
+
+button {
+    color: #640909;
+    background-color: #020403;
+}
+
+nav a {
+    text-decoration: none;
+    color: #020403;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---------------------------------> MENU<--------------------------------------------*/
+.menu {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+
+}
+
+.menu-icon {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*display: block;*/
+}
+
+nav {
+    background-image: linear-gradient(10deg, #FFFFFF, #640909) ; 
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Desktop*/
+@media(min-width: 992px) {
+    .lg-hidden {
+        display: none;
+    }
+    #main-menu {
+        max-height: none;
+        background-color: none;
+        display: inline;
+        text-align: right;
+    }
+    nav a {
+        color: #FFFFFF;
+    }
+    nav li {
+        display: inline-block;
+        padding-left: 60px;
+    }
+    .row {
+        display: flex;
+        background-color: #640909;
+    }
+    .col-md-4 {
+        width: 33.33%;
+        padding: 10px;
+        height: 100%;
+    }
+}
+
+/* ---------------------------------> INTRO<--------------------------------------------*/
+
+
+
+/* ---------------------------------> SOCIAL MEDIA<--------------------------------------------*/
+
+
+/* ---------------------------------> HABILITIES<--------------------------------------------*/
+
+
+/* ---------------------------------> PORTAFOLIO <--------------------------------------------*/
+h4 {
+    color: #FFFFFF;
+}
+
+.card {
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+img {
+    display: flex;
+    height: 100%;
+}
+
+
+
